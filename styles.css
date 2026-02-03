@@ -1,0 +1,89 @@
+#lion {
+    color:#125C0D;
+    font-style: italic;
+}
+#fancy {
+    color:#A328EB;
+    font-weight: bold
+}
+#sassy {
+    color:#B0B0B0;
+    text-decoration: underline;
+    text-anchor: #303030;
+}
+#speedy {
+    color:#999999;
+    font-weight: lighter;
+
+}
+#wolf {
+    color:#19C7D1
+}
+#castle {
+    color:#F0B607
+}
+#cruel {
+    color:#000000
+}
+#blood {
+    color:#ED2B2B
+}
+#iron {
+    color:#C9C9C9
+}
+#angry {
+    color:#C70000
+}
+#ultra {
+    color:#0F56D1
+}
+#stinky {
+    color:#8BD92B
+}
+#nerd   {
+    color:#FF0000
+}
+#heresy {
+    color:#D1C10F
+}
+#heretic {
+    color: #B83218
+}
+#fire {
+    color:#36B336
+}
+#raven {
+    color:#591669
+}
+#who {
+    color:#38C9A0
+}
+#primarch {
+    color:#F7B92A;
+    font-size: 24px;
+}
+#title {
+    text-align: center;
+    font-size: 32px;
+    color: #4A90E2;
+    font-weight: bold;
+}
+ul li {
+    margin-bottom: 8px;
+}
+main p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #333333;
+}
+#official-website {
+    display: block;
+    margin-top: 10px;
+    font-size: 24px;
+    color: #FFC35E;
+    text-decoration: none;
+}
+:hover #official-website {
+    color: #4A90E2;
+    text-decoration: underline;
+}
