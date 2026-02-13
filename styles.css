@@ -61,6 +61,7 @@
 #primarch {
     color:#F7B92A;
     font-size: 24px;
+    text-align: center;
 }
 #title {
     text-align: center;
@@ -86,4 +87,24 @@ main p {
 :hover #official-website {
     color: #4A90E2;
     text-decoration: underline;
+}
+
+.center-img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;  
+}
+.center-heading{
+    text-align: center;
+}
+.column-list{
+    column-count: 3 ;
+    column-gap: 15px;
+    list-style-type: none;
+    text-align: center;
+}
+.padded-img{
+    padding: 10px solid darkgrey;
+    border: 5px solid darkblue;
 }
