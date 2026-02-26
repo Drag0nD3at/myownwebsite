@@ -18,12 +18,25 @@ document.addEventListener('DOMContentLoaded', function () {
       closeBtn.innerHTML = '&times;';
       nav.appendChild(closeBtn);
     }
+
+    // Simple close button behavior: close nav on small screens, toggle closed state on larger screens
     closeBtn.addEventListener('click', function (e) {
       e.stopPropagation();
       if (window.innerWidth <= 600) {
         document.body.classList.remove('nav-open');
       } else {
         document.body.classList.add('nav-closed');
+      }
+    });
+
+    // Ensure a clean state when resizing across the 600px breakpoint
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 600) {
+        // desktop: remove mobile open state
+        document.body.classList.remove('nav-open');
+      } else {
+        // mobile: remove desktop-closed state
+        document.body.classList.remove('nav-closed');
       }
     });
   }

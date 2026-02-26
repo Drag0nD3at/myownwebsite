@@ -7,7 +7,7 @@ body {
 
 .header {
     text-align: center;
-    padding: 20px;
+    padding: clamp(12px, 3vw, 28px);
 }
 
 h1 {
@@ -16,9 +16,9 @@ h1 {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: clamp(12px, 2vw, 24px);
+    padding: clamp(12px, 2.5vw, 24px);
     max-width: 100%;
 }
 
@@ -29,11 +29,26 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .center-img{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  border: 15px solid darkgreen;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 640px;
+    border: 12px solid darkgreen;
+}
+
+@media (max-width: 900px) {
+        .container { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+@media (max-width: 450px) {
+        .container { grid-template-columns: 1fr; }
+        .center-img { max-width: 100%; border: 8px solid darkgreen; }
+}
+
+@media (max-width: 350px) {
+        .container { gap: 12px; padding: 12px; }
+        .center-img { border-width: 6px; }
 }
 #official-website {
     display: block;

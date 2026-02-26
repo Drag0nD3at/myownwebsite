@@ -1,0 +1,33 @@
+/* Emperor's Children page-specific styles */
+/* Uses variables from framework.css (linked in the HTML) */
+
+body {
+	background: var(--ec-purple);
+	color: var(--text-on-primary);
+	min-height: 100vh;
+	line-height: 1.5;
+}
+
+header { padding: 1rem 0; }
+header h1 { font-size: 2rem; margin: 0; }
+
+/* Ensure header stays centered when used inside different layouts */
+header { text-align: center; }
+
+header h1 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); }
+
+main section { margin-bottom: 1.25rem; padding: 0.25rem 0; }
+
+/* Make sections fit nicely into the 3-column grid */
+.container section { padding: clamp(8px, 1.5vw, 12px); background: rgba(255,255,255,0.03); border-radius: 6px; }
+
+/* Ensure images inside content scale to column width */
+.container img { width: 100%; height: auto; display: block; }
+
+img { border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+
+a { color: #ffe6ff; }
+.vertical-nav a { color: rgba(255,255,255,0.95); display: block; padding: 0.35rem 0; }
+
+footer { padding: 1rem 0; opacity: 0.95; text-align: center; }
+
