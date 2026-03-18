@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var currentPath = location.pathname.replace(/\\/g, '/');
     navLinks.forEach(function (link) {
       try {
-        var linkPath = new URL(link.href, location.origin).pathname.replace(/\\/g, '/');
+        var linkPath = new URL(link.getAttribute('href'), location.href).pathname.replace(/\\/g, '/');
         if (linkPath === currentPath || (linkPath.endsWith('/') && currentPath === '/')) {
           link.classList.add('active');
         }

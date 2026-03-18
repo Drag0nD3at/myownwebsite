@@ -1,10 +1,14 @@
 body {
-    background: #f5f5f7;
+    background: #e6f4e8;
     min-height: 100vh;
     margin: 0;
     padding: 4px;
     color: #000000;
     line-height: 1.7;
+}
+
+body.with-vertical-nav {
+    background: #e6f4e8;
 }
 
 .header {
@@ -14,6 +18,13 @@ body {
 
 h1 {
     text-align: center;
+}
+
+.header h1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .container {
@@ -59,7 +70,7 @@ h1 {
     color: #FFC35E;
     text-decoration: none;
 }
-:hover #official-website {
+#official-website:hover {
     color: #4A90E2;
     text-decoration: underline;
 }
