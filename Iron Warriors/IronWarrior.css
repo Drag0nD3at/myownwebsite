@@ -50,3 +50,6 @@ img {
     main { padding: 1vw; }
     section.card { padding: 1vw; }
 }
+title{
+    text-align: center;
+}
